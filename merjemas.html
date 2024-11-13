@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Tech Review Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Tech Review Website</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Register</h1>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="registration-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="date-of-birth">Date of Birth:</label>
+                    <input type="date" class="form-control" id="date-of-birth" name="dob" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>Course: Web Development | Name: Merjema</p>
+    </footer>
+
+    <script src="assets/js/formValidation.js"></script>
+</body>
+</html>
